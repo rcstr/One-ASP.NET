@@ -11,7 +11,12 @@ namespace FirstAppplication
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Submit.ServerClick += Submit_ServerClick;
+        }
 
+        void Submit_ServerClick(object sender, EventArgs e)
+        {
+            Message.InnerText = "Hello rommel";
         }
     }
 }
